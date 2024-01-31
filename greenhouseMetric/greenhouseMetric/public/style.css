@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(233, 233, 233);
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 8px 30px 10px 8px;
+  background-color: rgb(61, 61, 61);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+a {
+  color: rgb(20, 20, 20);
+  text-decoration: none;
+}
+
+.btn {
+  height: auto;
+  border-radius: 20px;
+  font-weight: bold;
+  color: rgb(26, 26, 26);
+}
+
+.btn:hover {
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+/* FRONT */
+
+.front {
+  position: absolute;
+  background-color: rgb(34, 34, 34, 0.9);
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 100px 0px;
+  transform: translatey(0);
+  transition: all 1s;
+}
+
+.slide {
+  transform: translatey(-100%);
+}
+
+.front img {
+  width: 300px;
+}
+.front .about {
+  padding: 30px;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+.front .btn-start {
+  align-items: center;
+  text-align: center;
+}
+.front .btn {
+  background-color: rgb(255, 111, 111);
+}
+.front .btn:hover {
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+
+/* HEADER */
+
+header .logo {
+  display: grid;
+  align-items: center;
+}
+header p {
+  align-items: center;
+  margin: 0;
+  color: rgb(247, 247, 247);
+  font-weight: bold;
+}
+
+header .tombol {
+  align-items: center;
+  text-align: end;
+}
+
+header .btn {
+  background-color: rgb(255, 255, 140);
+}
+
+/* Content */
+
+#content {
+  display: grid;
+  grid-template-areas: "graph graph  data";
+  padding: 90px;
+  padding-top: 40px;
+}
+
+#graph {
+  grid-area: graph;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 100px 0px;
+
+  border-radius: 3px;
+}
+
+#chart {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+#data {
+  grid-area: data;
+  text-align: end;
+  align-items: flex-end;
+  padding: 10;
+}
+.text-data {
+  padding: 10px;
+
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 100px 0px;
+}
+.text-data p {
+  text-align: start;
+}
+.tbl {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+  overflow: scroll;
+  height: 40rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 50px 0px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .front {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  #content {
+    display: grid;
+    grid-template-areas:
+      "graph"
+      "data";
+    padding: 0;
+    width: 300px;
+  }
+
+  #graph {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  #data {
+    padding: 0;
+    width: 100%;
+  }
+}

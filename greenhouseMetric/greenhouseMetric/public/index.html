@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS STYLE-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- update the version number as needed -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+    <!-- include only the Firebase features as you need -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Title -->
+    <title>project X</title>
+
+    <!-- update the version number as needed -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script> -->
+
+    <!-- include only the Firebase features as you need -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script> -->
+  </head>
+  <body>
+    <!-- FRONT -->
+    <div class="front">
+      <div class="about">
+        <img src="asset/front.png" alt="front" />
+        <h2>Dashboard Maiza</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero,
+          deleniti quod. Fugit aspernatur, quo laboriosam expedita dolore odit,
+          ex rem nisi molestiae, blanditiis asperiores et repudiandae explicabo
+          reiciendis animi exercitationem.
+        </p>
+      </div>
+      <div class="btn-start">
+        <button type="button" class="btn btn-light" id="str">
+          Get Started
+        </button>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">
+        <p>TA-2022</p>
+      </div>
+      <div class="tombol">
+        <button type="button" class="btn btn-light" id="btn-str">
+          About us
+        </button>
+      </div>
+    </header>
+    <div id="content">
+      <section id="graph">
+        <div id="chart">
+          <h1>Chart</h1>
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+      </section>
+
+      <section id="data">
+        <div class="text-data">
+          <h3>Data</h3>
+          <p>Suhu : <a class="tsuhu"></a></p>
+          <p>Kelembaban : <a class="tkelembaban"></a></p>
+          <p>Cahaya : <a class="tcahaya"></a></p>
+        </div>
+        <div class="tbl">
+          <table class="table" id="myTable" border="1">
+            <tr>
+              <td>Suhu</td>
+              <td>cahaya</td>
+              <td>Kelembaban</td>
+              <td>waktu</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- Java Script-->
+    <script src="javascript.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
